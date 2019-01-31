@@ -1,10 +1,9 @@
 # PyTorch Practice
 some exercises for PyTorch, mainly related to Sequence to Sequence model.
 
+## PyTorch Official Guide
 
-## PyTorch official guide
-
-### reshape and resize in numpy
+### Transpose and Reshape in Numpy
 
 - transpose: transpose是矩阵的转置,在二维的时候很容易想明白转置之后的情况,但是高维度的时候就糊涂了,
     我们可以非常简单的通过单个数据的位置来理解,每个元素根据矩阵的索引会有一个位置,转置之后元素的位置会变成新的位置,
@@ -18,10 +17,11 @@ some exercises for PyTorch, mainly related to Sequence to Sequence model.
     应该是 C 顺序准确的含义是从最里面的轴开始读写,而F顺序则是从最外面的轴开始读写,
     
         a = array([[0, 1],
-               [2, 3],
-               [4, 5]])
+                   [2, 3],
+                   [4, 5]])
                
     以上面的二维数据 a(3,2) 举例就是,
     C顺序就是先读写最里面 2 这个轴的数据,也就是得到 [0,1,2,3,4,5] 这样的顺序,而F顺序则是从最外层 3 这个轴的数据开始读写,
     得到 [0,2,4,1,3,5] 多维数据以此类推。
-   
+
+### 
